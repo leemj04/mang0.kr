@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>List | Minjae Lee</title>
+  <meta name="description" content="Markdown review index" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/review.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.css" />
+</head>
+
+<body data-page="list">
+  <header class="site-header">
+    <div class="container">
+      <div class="top">
+        <div class="title">
+          <a class="name" href="/index.html">mang0.kr</a>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <a href="/pages/list.html">Blog</a>
+          <a href="/index.html">CV</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container list-layout">
+    <section class="list-hero">
+      <div class="review-title-row">
+        <h1 class="review-title">Posts</h1>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="ko">KR</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+      <p class="list-desc">Papers and CTF writeups.</p>
+      <div class="filter-toggle" role="group" aria-label="Content type">
+        <button type="button" class="filter-btn" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="review">Paper</button>
+        <button type="button" class="filter-btn" data-filter="writeup">Writeup</button>
+      </div>
+    </section>
+
+    <section class="list-panel" aria-label="Post list">
+      <div id="fileList" class="file-list grid"></div>
+    </section>
+  </main>
+
+  <script defer src="/js/render.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "260125",
+    "type": "review",
+    "title": {
+      "en": "Factoring an integer with three oscillators and a qubit",
+      "ko": "Factoring an integer with three oscillators and a qubit"
+    },
+    "files": {
+      "en": "260125-en.md",
+      "ko": "260125.md"
+    },
+    "dateLabel": "2026.01.25.",
+    "dateRaw": "260125",
+    "sortKey": 20260125
+  }
+]
