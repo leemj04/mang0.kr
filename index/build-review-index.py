@@ -3,10 +3,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-root_dir = Path(__file__).parent
-review_dir = root_dir / "review"
-writeup_dir = root_dir / "writeup"
-out_file = root_dir / "review-index.json"
+script_dir = Path(__file__).resolve().parent
+repo_root = script_dir.parent
+review_dir = repo_root / "review"
+writeup_dir = repo_root / "writeup"
+out_file = script_dir / "review-index.json"
 
 def parse_date_label(name: str) -> tuple[str | None, str | None, int | None]:
     stem = Path(name).stem

@@ -9,6 +9,7 @@ const statusEl = document.getElementById("status");
 const listEl = document.getElementById("fileList");
 const langButtons = Array.from(document.querySelectorAll(".lang-btn"));
 const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
+const SITE_ROOT = new URL("..", window.location.href);
 
 const LANG_LABELS = { ko: "KR", en: "EN" };
 const FILTER_LABELS = { all: "All", review: "Reviews", writeup: "Writeup" };
@@ -198,16 +199,11 @@ function resolveLang(entry, lang) {
   return null;
 }
 
-function ensureRootPath(path) {
-  if (!path) return "";
-  return path.startsWith("/") ? path : `/${path}`;
-}
-
 function resolveFilePath(entry, file) {
   if (!file) return "";
-  if (file.includes("/")) return ensureRootPath(file);
+  if (file.includes("/")) return new URL(file, SITE_ROOT).toString();
   const folder = entry?.type === "writeup" ? "writeup" : "review";
-  return `/${folder}/${file}`;
+  return new URL(`${folder}/${file}`, SITE_ROOT).toString();
 }
 
 function getTitle(entry, lang) {
@@ -343,7 +339,7 @@ function refreshListTitles() {
 
 async function init() {
   try {
-    const res = await fetch("/index/review-index.json", { cache: "no-store" });
+    const res = await fetch(new URL("index/review-index.json", SITE_ROOT), { cache: "no-store" });
     if (!res.ok) throw new Error("review-index.json not found");
     const data = await res.json();
     if (Array.isArray(data)) {
