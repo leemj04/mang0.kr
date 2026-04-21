@@ -26,19 +26,6 @@
     "sortKey": 20260310
   },
   {
-    "id": "260309",
-    "type": "review",
-    "title": {
-      "ko": "How to factor 2048 bit RSA integers with less than a million noisy qubits"
-    },
-    "files": {
-      "ko": "260309.md"
-    },
-    "dateLabel": "2026.03.09.",
-    "dateRaw": "260309",
-    "sortKey": 20260309
-  },
-  {
     "id": "260125",
     "type": "review",
     "title": {
