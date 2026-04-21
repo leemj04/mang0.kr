@@ -1,5 +1,18 @@
 [
   {
+    "id": "260407",
+    "type": "review",
+    "title": {
+      "ko": "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem"
+    },
+    "files": {
+      "ko": "260407.md"
+    },
+    "dateLabel": "2026.04.07.",
+    "dateRaw": "260407",
+    "sortKey": 20260407
+  },
+  {
     "id": "260310",
     "type": "review",
     "title": {
@@ -11,6 +24,19 @@
     "dateLabel": "2026.03.10.",
     "dateRaw": "260310",
     "sortKey": 20260310
+  },
+  {
+    "id": "260309",
+    "type": "review",
+    "title": {
+      "ko": "How to factor 2048 bit RSA integers with less than a million noisy qubits"
+    },
+    "files": {
+      "ko": "260309.md"
+    },
+    "dateLabel": "2026.03.09.",
+    "dateRaw": "260309",
+    "sortKey": 20260309
   },
   {
     "id": "260125",
